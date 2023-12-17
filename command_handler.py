@@ -63,7 +63,11 @@ class CommandHandler:
     def show_birthday(self, args, book):
         name = args[0]
         record = book.find(name)
+        if record.birthday == None:
+            raise NoBirthdayError
         print(record.show_birthday())
+        
+        
 
     @input_error
     def birthdays(self, book):

@@ -15,8 +15,6 @@ class AddressBook(UserDict):
         return f"{record.name.value} added"
 
     def find(self, name):
-        if self.data[name].birthday == None:
-            raise NoBirthdayError
         if name in self.data:
             return self.data[name]
         raise NotFoundError
