@@ -66,8 +66,6 @@ class CommandHandler:
         if record.birthday == None:
             raise NoBirthdayError
         print(record.show_birthday())
-        
-        
 
     @input_error
     def birthdays(self, book):
