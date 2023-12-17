@@ -14,7 +14,7 @@ def input_error(func):
         except NotFoundError:
             print("Contact was not found")
         except ValueError:
-            print("Incorrect input")
+            print("Incorrect input. Add name and value")
         except IndexError:
             print("Incorrect data. Input name")
         except KeyError:
